@@ -7,8 +7,12 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.
 */
 
+//chiedo all'utente di scegliere pari o dispari
+let userchoice= parseInt(prompt('scegli tra pari o dispari'));
+
+//chieso all'utente di scegliere un numero da 1 a 5
 let userNumber = parseInt(prompt('inserisci un numero da 1 a 5'));
-console.log( 'il tuo numero è: ' + userNumber);
+console.log( 'il tuo numero è: ' + userNumber );
 let message;
 //applico una condizione di verifica 
 if (userNumber > 5 || isNaN (userNumber)) {
@@ -23,11 +27,11 @@ function getNumberRandom (number){
     return numberRandom
 }
 
-//sommo i numeri
+//sommo i due risultati
 let sum = userNumber + pcNumber;
 
-
-
+//creo la condizione per stabilire il vincitore 
+if
 
 
 
