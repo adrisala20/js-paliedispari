@@ -8,14 +8,27 @@ Dichiariamo chi ha vinto.
 */
 
 let userNumber = parseInt(prompt('inserisci un numero da 1 a 5'));
+console.log(userNumber);
 let message;
 //applico una condizione di verifica 
 if (userNumber > 5 || isNaN (userNumber)) {
     message = 'valore non disponibile';
     console.log (message)
 }
+let pcNumber = 0;
+//creo una funzione di numeri randomici per il computer
+function getNumberRandom (number){
+    let numberRandom;
+    for (i= 1; i<1 ; i++){
+        numberRandom = getRndInteger(1,5);
+    }
+    pcNumber = numberRandom;
+    console.log(pcNumber);
+}
 
-//function getRandomNumbers()
+
+
+
 
 
 
