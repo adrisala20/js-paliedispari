@@ -19,14 +19,13 @@ function getWordSplit(word){
     console.log (wordReverse);
     
     //controllo che le lettere siano uguali all'incontrario
-    let compareArray = (wordSplit === wordReverse);
+    let reverse = wordReverse.join('');
 
-    if(wordSplit !== wordReverse){
-        return false;
+    if(reverse === word){
+        console.log('le parole sono uguali');
     } else {
-
-    
-}
+        console.log('non è una parola palindroma')
+    }
 }
 
 
