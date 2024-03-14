@@ -32,12 +32,15 @@ function getNumberRandom (number){
 let sum = userNumber + pcNumber;
 console.log(sum);
 
-let result = getOddOrEven(userChoice);
+let result = getOddOrEven(sum);
 console.log(result);
 
 //stabilisco il vincitore
 if(userChoice !== result){
-    message = 'hai perso, riprova';
+    message = 'hai perso, il pc ha vinto!';
+    console.log(message);
+} else {
+    message = 'Congratulazioni, hai vinto!'
     console.log(message);
 }
 
