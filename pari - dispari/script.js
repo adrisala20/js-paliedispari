@@ -8,7 +8,8 @@ Dichiariamo chi ha vinto.
 */
 
 //chiedo all'utente di scegliere pari o dispari
-let userchoice= parseInt(prompt('scegli tra pari o dispari'));
+let userChoice=prompt('scegli tra pari o dispari');
+console.log(userChoice);
 
 //chieso all'utente di scegliere un numero da 1 a 5
 let userNumber = parseInt(prompt('inserisci un numero da 1 a 5'));
@@ -29,9 +30,25 @@ function getNumberRandom (number){
 
 //sommo i due risultati
 let sum = userNumber + pcNumber;
+console.log(sum);
 
-//creo la condizione per stabilire il vincitore 
-if
+let result = getOddOrEven(userChoice);
+console.log(result);
+
+//stabilisco il vincitore
+if(userChoice !== result){
+    message = 'hai perso, riprova';
+    console.log(message);
+}
+
+//creo la funzione per stabilire il vincitore 
+function getOddOrEven(number){
+    if(number % 2 === 0){
+        return 'pari';
+    } else {
+        return 'dispari';
+    }
+}
 
 
 
