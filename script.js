@@ -5,10 +5,13 @@ Creare una funzione per capire se la parola inserita è palindroma */
 //chiedere all'utente di inserire una parola palindroma
 let userWord = prompt('inserisci una parola palindroma');
 console.log(userWord);
+let wordPalindroma = getWordSplit(userWord);
 
-function getWordUser(wordPalindroma){
-    newWordSplit = 
-    for()
+//creo la funzione
+function getWordSplit(word){
+    newWordSplit = word.split('');
+    console.log (newWordSplit)
+    return newWordSplit
 }
 
 
