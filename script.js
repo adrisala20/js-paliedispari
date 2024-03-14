@@ -14,18 +14,20 @@ function getWordSplit(word){
     let wordSplit = word.split('');
     console.log (wordSplit);
 
-    //controllo che le lettere siano uguali all'incontrario
+    //controllo le lettere all'incontrario
     let wordReverse = wordSplit.reverse();
     console.log (wordReverse);
     
+    //controllo che le lettere siano uguali all'incontrario
+    let compareArray = (wordSplit === wordReverse);
 
+    if(wordSplit !== wordReverse){
+        return false;
+    } else {
 
-    return wordSplit;
+    
 }
-
-
-
-
+}
 
 
 /*
@@ -40,6 +42,6 @@ Dichiariamo chi ha vinto.
 
 
 //funzione numeri random
-function getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
+// function getRndInteger(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1) ) + min;
+// }
